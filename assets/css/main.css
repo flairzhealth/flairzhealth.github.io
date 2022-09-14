@@ -1,5 +1,9 @@
-@import url(fontawesome-all.min.css);
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic");
+/* @import url(fontawesome-all.min.css); */
+/* @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic"); */
+/* @import url("https://fonts.googleapis.com/css?family=Roboto:400,400italic,600,600italic,800,800italic"); */
+@import url("https://fonts.googleapis.com/css?family=Inter:100,200,300,400,600,800");
+@import url("https://fonts.googleapis.com/css?family=Gelasio:400,400italic,500,500itaclic,600,600italic, 700,700italic");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic,500,500itaclic,600,600italic, 700,700italic");
 
 /*
 	Spectral by HTML5 UP
@@ -35,6 +39,7 @@ body {
 
 ol, ul {
 	list-style: none;
+	font-family: "Sofia", sans-serif;
 }
 
 blockquote, q {
@@ -102,10 +107,11 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		color: #fff;
-		font-family: "Open Sans", Helvetica, sans-serif;
+		color: rgb(255, 255, 255);
+		font-family: "Inter";
+		/* "Open Sans", Helvetica, sans-serif; */
 		font-size: 15pt;
-		font-weight: 400;
+		font-weight: 300;
 		letter-spacing: 0.075em;
 		line-height: 1.65em;
 	}
@@ -164,7 +170,8 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #fff;
-		font-weight: 800;
+		font-family:'Inter';
+		font-weight: 300;
 		letter-spacing: 0.225em;
 		line-height: 1em;
 		margin: 0 0 1em 0;
@@ -1823,7 +1830,7 @@ input, select, textarea {
 		display: block;
 		font-size: 0.9em;
 		font-weight: 600;
-		margin: 0 0 1em 0;
+		margin: 1em 0 0em 0;
 	}
 
 	input[type="text"],
@@ -2695,6 +2702,10 @@ input, select, textarea {
 			width: 60%;
 		}
 
+		.spotlight .content h2 {
+			color:#8ae2ff
+		}
+
 		.spotlight:nth-child(2n) {
 			-moz-flex-direction: row-reverse;
 			-webkit-flex-direction: row-reverse;
@@ -2817,7 +2828,8 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: #21b2a6;
+			background-color: #236d85 ;
+			/* #21b2a6; */
 			color: #c8ece9;
 		}
 
@@ -2980,7 +2992,8 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {
-			background-color: #505393;
+			background-color: #236d85;
+			/* #505393; */
 			color: #d3d4e4;
 		}
 
@@ -3584,6 +3597,27 @@ input, select, textarea {
 		text-align: center;
 	}
 
+		#banner-contact {
+			display: -moz-flex;
+			display: -webkit-flex;
+			display: -ms-flex;
+			display: flex;
+			-moz-flex-direction: column;
+			-webkit-flex-direction: column;
+			-ms-flex-direction: column;
+			flex-direction: column;
+			-moz-justify-content: center;
+			-webkit-justify-content: center;
+			-ms-justify-content: center;
+			justify-content: center;
+			cursor: default;
+			height: 100vh;
+			min-height: 35em;
+			overflow: hidden;
+			position: relative;
+			text-align: center;
+		}
+
 		#banner h2 {
 			-moz-transform: scale(1);
 			-webkit-transform: scale(1);
@@ -3997,3 +4031,45 @@ input, select, textarea {
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+
+/* Custom */
+
+	.quotes {
+		padding: 2em 4em 2em 4em;
+		font-family: 'Roboto';
+		font-weight: 100;
+		font-style: italic;
+		font-size: 32pt;
+		line-height: 1.3;
+	}
+
+		@media screen and (max-width: 980px) {
+			.quotes {
+					padding: 2em 2em 2em 2em;
+					font-family: 'Roboto';
+					font-weight: 100;
+					font-style: italic;
+					font-size: 22pt;
+					line-height: 1.1;
+				}
+			}
+		@media screen and (max-width: 736px) {
+			.quotes {
+				padding: 0 2em 2em 2em;
+				font-family: 'Roboto';
+				font-weight: 100;
+				font-style: italic;
+				font-size: 18pt;
+				line-height: 1.4;
+			}
+		}
+		@media screen and (max-width: 480px) {
+			.quotes {
+					padding: 0 2em 2em 2em;
+					font-family: 'Roboto';
+					font-weight: 100;
+					font-style: italic;
+					font-size: 14pt;
+					line-height: 1.4;
+				}
+			}
