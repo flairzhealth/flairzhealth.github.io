@@ -2792,6 +2792,51 @@ input, select, textarea {
 
 		}
 
+.carousel-wrapper {
+	position: relative;
+	max-width: 600px;
+	/* Adjust as needed */
+	margin: auto;
+	overflow: hidden;
+}
+
+.carousel {
+	display: flex;
+}
+
+.carousel-item {
+	min-width: 100%;
+	/* Each item takes full width of the carousel */
+	transition: transform 0.5s ease;
+	display: flex;
+	justify-content: center;
+	/* Center the image in the item */
+	align-items: center;
+	/* Center the image vertically */
+}
+
+.carousel-item img {
+	max-height: 100px;
+	max-width: 100px;
+	object-fit: contain;
+	/* This ensures the image is fully visible and maintains aspect ratio */
+}
+
+.carousel-control {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	cursor: pointer;
+}
+
+.carousel-control.prev {
+	left: 10px;
+}
+
+.carousel-control.next {
+	right: 10px;
+}
+
 /* Wrapper */
 
 	.wrapper {
