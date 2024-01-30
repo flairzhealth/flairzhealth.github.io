@@ -1,0 +1,67 @@
+.horizontal-section-wrapper {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.section-title {
+    width: 15%;
+    padding-right: 20px;
+    margin-left: 50px;
+    /* Adjust as needed */
+}
+
+.horizontal-scroll-wrapper {
+    width: 85%;
+    overflow-x: auto;
+    /* white-space: nowrap; */
+}
+
+.scrollable-content {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 50px;
+}
+
+.scrollable-item {
+    display: inline-block;
+    min-width: 360px;
+    /* width can be set as needed */
+    padding: 30px;
+    margin-right: 20px;
+    box-sizing: border-box;
+    vertical-align: top;
+    background-color: #eee;
+    color: #555;
+    /* border: 1px solid white; */
+}
+
+.scrollable-item h3 {
+    color:#222;
+    font-size: 1.2em;
+    min-height: 75px;
+}
+
+.scrollable-item p {
+    font-size: 1em;
+}
+
+.scrollable-item button {
+    display: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* Optional: a little bit of styling for the scrollbar itself */
+.horizontal-scroll-wrapper::-webkit-scrollbar {
+    height: 10px;
+}
+
+.horizontal-scroll-wrapper::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+.horizontal-scroll-wrapper::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
