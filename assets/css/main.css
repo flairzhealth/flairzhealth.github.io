@@ -3638,6 +3638,21 @@ input, select, textarea {
 		position: relative;
 		text-align: center;
 	}
+		#banner .risk-labels-container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+			gap: 10px;
+			margin-bottom: 50px;
+			/* Adjust the space between items as needed */
+		}
+	
+		#banner .risk-label {
+			display: inline-block;
+			margin: 0 5px;
+			/* Adjust the space between labels as needed */
+		}
 
 		#banner-contact {
 			display: -moz-flex;
